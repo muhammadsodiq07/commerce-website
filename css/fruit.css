@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --poppins: 'Poppins', sans-serif;
+  --primary-color: #6a983c;
+  --bold: 700;
+  --normal: 600;
+  --semi-bold: 500;
+  --thin: 400;
+  --text-color: #151515;
+}
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+ul{
+  list-style: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+a{
+  text-decoration: none;
+}
+button{
+  border: none;
+}
+
+/* HERO START  */
+
+
+.hero__chat__link {
+  font-size: 12px;
+  color: var(--text-color);
+}
+.hero__chat__link:hover{
+  color: var(--primary-color);
+}
+.hero__chat__link:not(:last-child){
+  margin-right: 35px;
+}
+.hero__chat__link--active {
+  color: var(--primary-color);
+}
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+.nav__link {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+.nav__link:hover{
+  color: var(--text-color);
+}
+.hero__inner{
+  padding: 16px 0;
+  border-bottom: 1px solid #1515151a;
+}
+.hero__part{
+  padding-top: 40px;
+}
+.hero__part__inp{
+  background-color: #f9f9f9;
+  height: 41px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  position: relative;
+}
+.hero__part__btn{
+  background-color: transparent;
+  color: #151515;
+  font-family: var(--poppins);
+  font-weight: var(--bold);
+  border: none;
+  border-radius: 12px 0 0 12px;
+  height: 40px;
+  padding-right: 30px;
+  padding-left: 16px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.hero{
+  margin-bottom: 50px;
+}
+.menu__btn{
+  font-size: 30px;
+  background-color: transparent;
+  display: none;
+}
+.hero__part__btn:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.hero__part__btn:hover .bxs-chevron-down{
+  color: #fff;
+}
+.hero__part__btn::before{
+  content: "";
+  width: 1px;
+  height: 55%;
+  background-color: #d1d1d1;
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+}
+.bxs-chevron-down{
+  position: relative;
+  left: 5px;
+  top: 3px;
+  color: var(--primary-color);
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+.hero__part__btn::after{
+  display: none;
+}
+.hero__part__search{
+  width: 262px;
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+  position: absolute;
+  top: 5px;
+}
+.hero__part__search:focus{
+  outline: none;
+}
+.hero-part__wrapper{
+  position: relative;
+}
+.hero__part__icon{
+  position: absolute;
+  right: 15px;
+  top: 11px;
+}
+.hero-part__user{
+  background-color: transparent;
+}
+.hero-part__user--first{
+  margin-right: 35px;
+}
+.hero-part__user:active{
+  outline: none;
+}
+.hero-part__basket{
+  background-color: transparent;
+}
+.hero__part__last{
+  display: flex;
+  justify-content: flex-end;
+}
+.dropdown__none{
+  display: none;
+}
+
+
+
+
+/* HERO END  */
+
+.menu{
+  background-color: #f9f9f9;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 65px;
+}
+.menu__button{
+  background-color: transparent;
+  font-family: var(--poppins);
+  font-weight: var(--semi-bold);
+}
+.menu__button::after{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .menu__list{
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 785px) {
+  .hero__chat__link:not(:last-child){
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .menu__list{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hero{
+    margin-bottom: 0px;
+  }
+  
+}
+
+@media screen and (max-width: 530px) {
+  .container{
+    width: 95%;
+  }
+  .hero__part__inp{
+    display: none;
+  }
+  .menu-btn{
+    margin-right: 15px;
+  }
+  .hero__inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero__main__logo{
+    width: 150px;
+    height: 150px;
+  }
+  .hero__part{
+    padding-top: 0 ;
+  }
+  .dropdown{
+    display: block;
+  }
+  .nav{
+    justify-content: center;
+  }
+  .menu-btn::after{
+    display: none;
+  }
+  .bx-menu{
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+  }
+  .hero__second__part{
+    position: relative;
+    top: -20px;
+  }
+  
+}
