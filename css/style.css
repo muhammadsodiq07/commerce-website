@@ -33,7 +33,10 @@ a{
 button{
   border: none;
 }
-
+.nav-link {
+  padding-left: 0;
+  color: var(--primary-color);
+}
 /* HERO START  */
 
 
