@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active numbers mt-md-1" aria-current="page" href="tel: +420 336 775 664">+420 336 775 664</a>
+              <a class="nav-link active numbers mt-3 me-3" aria-current="page" href="tel: +420 336 775 664">+420 336 775 664</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link linkemail mt-1" href="#">info@freshnesecom.com</a>
+              <a class="nav-link linkemail mt-3" href="#">info@freshnesecom.com</a>
             </li>
           </ul>
           <div class="d-flex">
@@ -62,7 +62,7 @@
           <div class="style__input collapse navbar-collapse col-6" id="navbarScroll">
             <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
               <li class="nav-item dropdown">
-                <a class="nav-link text-black fs-6 fw-bold " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-black fs-6 fw-bold mt-3" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   All categories <i class='bx bxs-chevron-down icon-chevron-down'></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -83,7 +83,7 @@
           </div>
           <div class="navbar__box d-flex col-lg-1 justify-content-between">
             <a class="navbar__users" href="#"><i class='bx bx-user icon-users'></i></a>
-            <a class="navbar__shop" href="#"><i class='bx bx-shopping-bag icon-bag'></i></a>
+            <a class="navbar__shop"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"href="#"><i class='bx bx-shopping-bag icon-bag'></i></a>
           </div>
         </div>
         
@@ -91,8 +91,28 @@
     </div>
   </section>
 
-
-
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle w-50" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="dropsss">
     <div class="container">
@@ -447,6 +467,44 @@
 </div>
 </section>
 
+<section class="customers">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <h3 class="customers__heading">Our customers says</h3>
+        <button class="btn customer__btn">Button <i class='bx bx-chevron-right'></i></button>
+      </div>
+      <div class="customers__inner row mt-4">
+        <div class="col-sm-4 ">
+          <div class="card customers__card">
+            <div class="card-body">
+              <p class="card-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+               <h5 class="card-title mb-3">Name and Surname</h5>
+            <img src="img/Ellipse 3.png" alt="customer">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card customers__card">
+            <div class="card-body">
+              <p class="card-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+               <h5 class="card-title mb-3">Name and Surname</h5>
+            <img src="img/Ellipse 3.png" alt="customer">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card customers__card">
+            <div class="card-body ">
+              <p class="card-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+               <h5 class="card-title mb-3">Name and Surname</h5>
+            <img src="img/Ellipse 3.png" alt="customer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <section id="category">
 <div class="container">
     <div class="category__intro d-flex align-items-center justify-content-between">
@@ -733,7 +791,71 @@
 </section>
 
 
-
+    <div class="container">
+        <div class="tags mt-4">
+            <h3 class="tags__title my-4">Product tags</h3>
+            <ul class="nav">
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Beans</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Carrots</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Apples</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Garlic</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Mushrooms</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Mushrooms</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Chilli peppers</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Broccoli</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Watermelons</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Oranges</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Bananas</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Grapes</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Cherries</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Meat</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Seo tag</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Fish</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Seo tag</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Fresh food</a>
+              </li>
+              <li class="nav-item me-3 mb-2">
+                <a class="nav-link text-dark footer__link" href="#">Lemons</a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">Copyright © 2020 petrbilek.com</p>
+    </div>
 
 
   <script src="js/main.js"></script>
